@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "None",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "dist/nomnoml.js"
+    },
+    "include": ["src", "src/jison-parser.js"]
+}
