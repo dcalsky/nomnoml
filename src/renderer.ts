@@ -1,14 +1,12 @@
 namespace nomnoml {
 
-	declare var skanaar: any
-
 	type Quadrant = 1|2|3|4
 
 	export function render(graphics: Graphics, config: Config, compartment: Compartment, setFont: nomnoml.SetFont){
 
 		var padding = config.padding
 		var g = graphics
-		var vm = skanaar.vector
+		var vm = nomnoml.skanaar.vector
 
 		function renderCompartment(compartment: Compartment, style: Style, level: number){
 			g.save()

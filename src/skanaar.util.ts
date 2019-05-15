@@ -1,4 +1,4 @@
-namespace skanaar {
+namespace nomnoml.skanaar {
     export function plucker<T>(pluckerDef: any): (e:any) => any {
         switch (typeof pluckerDef) {
             case 'undefined': return function(e: any): T { return e }

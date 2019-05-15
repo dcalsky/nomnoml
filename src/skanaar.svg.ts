@@ -1,4 +1,4 @@
-namespace skanaar {
+namespace nomnoml.skanaar {
 
 	interface SvgState {
 		x: number

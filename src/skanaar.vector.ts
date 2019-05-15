@@ -1,6 +1,6 @@
 interface Vec { x: number, y: number }
 
-namespace skanaar {
+namespace nomnoml.skanaar {
   export var vector = {
     dist: function (a: Vec,b: Vec): number { return vector.mag(vector.diff(a,b)) },
     add: function (a: Vec,b: Vec): Vec { return { x: a.x + b.x, y: a.y + b.y } },

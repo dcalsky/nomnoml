@@ -27,27 +27,27 @@ suite.test('skanaar.testsuite.isEqual', function(){
 })
 
 suite.test('skanaar.format', function(){
-    var str = skanaar.format('Hi #, how are you #. That is #', 'Bob', 'today', 'good')
+    var str = nomnoml.skanaar.format('Hi #, how are you #. That is #', 'Bob', 'today', 'good')
     assertEqual(str, 'Hi Bob, how are you today. That is good')
-    assertEqual(skanaar.format('# #', 1, 2, 3), '1 2')
-    assertEqual(skanaar.format('# # #', 1, 2), '1 2 ')
+    assertEqual(nomnoml.skanaar.format('# #', 1, 2, 3), '1 2')
+    assertEqual(nomnoml.skanaar.format('# # #', 1, 2), '1 2 ')
 })
 
 suite.test('skanaar.max', function(){
-    assertEqual(skanaar.max([{a:7}, {a:10}, {a:6}], 'a'), 10)
-    assertEqual(skanaar.max([{a:7}, {a:10}, {a:6}], e => e.a), 10)
-    assertEqual(skanaar.max([7, 10, 6]), 10)
+    assertEqual(nomnoml.skanaar.max([{a:7}, {a:10}, {a:6}], 'a'), 10)
+    assertEqual(nomnoml.skanaar.max([{a:7}, {a:10}, {a:6}], e => e.a), 10)
+    assertEqual(nomnoml.skanaar.max([7, 10, 6]), 10)
 })
 
 suite.test('skanaar.flatten', function(){
-    assertEqual(skanaar.flatten([[4, 5]]), [4, 5])
-    assertEqual(skanaar.flatten([[7], [4, 5]]), [7, 4, 5])
-    assertEqual(skanaar.flatten([[7], [4, 5], [2]]), [7, 4, 5, 2])
+    assertEqual(nomnoml.skanaar.flatten([[4, 5]]), [4, 5])
+    assertEqual(nomnoml.skanaar.flatten([[7], [4, 5]]), [7, 4, 5])
+    assertEqual(nomnoml.skanaar.flatten([[7], [4, 5], [2]]), [7, 4, 5, 2])
 })
 
 suite.test('skanaar.indexBy', function(){
-    assertEqual(skanaar.indexBy([], 'name'), {})
-    assertEqual(skanaar.indexBy([{name:'apa'}], 'name'), {apa:{name:'apa'}})
+    assertEqual(nomnoml.skanaar.indexBy([], 'name'), {})
+    assertEqual(nomnoml.skanaar.indexBy([{name:'apa'}], 'name'), {apa:{name:'apa'}})
 })
 
 suite.test('jison parser should handle single class', function(){

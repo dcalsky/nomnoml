@@ -4,7 +4,7 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "outFile": "dist/nomnoml.js"
+        "outFile": "dist/nomnoml.web.js"
     },
     "include": ["src", "src/jison-parser.js"]
 }

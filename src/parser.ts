@@ -52,7 +52,7 @@ namespace nomnoml {
 
 		function directionToDagre(word: any): 'TB'|'LR' {
 			if (word == 'down') return 'TB'
-			if (word == 'left') return 'LR'
+			if (word == 'right') return 'LR'
 			else return 'TB'
 		}
 
